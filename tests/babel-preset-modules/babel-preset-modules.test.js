@@ -10,6 +10,7 @@ test('babel-preset-modules is being tested', t => {
 });
 test('esm files are being generated', async t => {
   const config = Object.assign({}, defaultConfig, {
+    devtool: 'sourcemaps',
     entry: {
       index: './tests/babel-preset-modules/fixtures/index.js',
     },
